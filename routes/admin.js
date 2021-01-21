@@ -12,7 +12,6 @@ router.get('/products', function(req, res){
     ProductsModel.find(function(err, products){ 
         res.render('admin/products', {products : products})
     });
-    //res.send('admin product page');
 });
 
 router.get('/products/write', function(req,res){

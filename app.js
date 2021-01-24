@@ -44,12 +44,20 @@ database = mongoose.connection;
 
 
 var admin = require('./routes/admin');
+var project = require('./routes/project');
 
 app.get('/', function(req, res){
    res.render('index');
 });
 
+app.post('/', function(req, res){
+    var name = req.body.description;
+    console.log(name);
+    res.redirect('/project?id='+name);
+ });
+
 app.use('/admin', admin);
+app.use('/project', project);
 
 app.listen(port, function(){
     console.log('Express listening on port', port);

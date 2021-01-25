@@ -1,5 +1,6 @@
 var bDisplay = true;
 
+
 function doDisplay(){
 
   var con = document.getElementById('toc-toggle');

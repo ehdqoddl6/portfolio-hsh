@@ -1,10 +1,8 @@
 var express = require('express');
 var url = require('url');
 var router = express.Router();
-var ProductsModel = require('../models/ProductsModel');
+var ProjectsModel = require('../models/ProjectsModel');
 
-var queryString = require('querystring');
-//var param = queryString.parse(curURL.query);
 
 router.get('/', function(req, res){
     console.log("android");
@@ -13,7 +11,18 @@ router.get('/', function(req, res){
     var queryName = queryData.id;
     console.log(queryName);
 
-    res.send(queryName);
+    ProjectsModel.find({ "category": queryName },function(err, projects){ 
+        res.render('project/project_list', {projects : projects})
+    });
+
+    //res.render('project/project_list');
+    //res.send(queryName);
+});
+
+router.post('/', function(req,res){
+    var name = req.body.project_name;
+    console.log(name);
+    res.redirect('/project?id='+name);
 });
 
 router.get('/project', function(req, res){

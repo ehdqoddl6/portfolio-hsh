@@ -51,7 +51,7 @@ app.get('/', function(req, res){
 });
 
 app.post('/', function(req, res){
-    var name = req.body.description;
+    var name = req.body.project_name;
     console.log(name);
     res.redirect('/project?id='+name);
  });

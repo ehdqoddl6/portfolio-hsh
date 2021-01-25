@@ -33,7 +33,7 @@
 <body>
     <div class="wrapper">
         <div class="sidebar-wrapper">
-            <div class="profile-container">
+            <div class="profile-container" onclick="location.href='/'">
                 <!--<img class="profile" src="assets/images/IMG_1518.jpg" alt="" />-->
                 <h3 class="">Ha Sunghyeok</h3>
                 <h3 class="tagline">Developer</h3>
@@ -42,7 +42,7 @@
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: ehdqoddl6@gmail.com"> ehdqoddl6@gmail.com </a></li>
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/" target="_blank">portfoliosite.com</a></li>
+                    <li class="website"><i class="fa fa-globe"></i><a href="https://portfolio-hsh.herokuapp.com/" target="p_blank">portfolio.herokuapp.com</a></li>
                     <li class="github"><i class="fa fa-github"></i><a href="https://github.com/ehdqoddl6?tab=repositories" target="_blank">github.com/ehdqoddl6</a></li>
                 </ul>
             </div><!--//contact-container-->
@@ -54,23 +54,9 @@
                     <h5 class="meta">Gachon University</h5>
                     <div class="time">2015 - 2021</div>
                 </div><!--//item-->
-                <!--
-                <div class="item">
-                    <h4 class="degree">BSc in Applied Mathematics</h4>
-                    <h5 class="meta">Bristol University</h5>
-                    <div class="time">2007 - 2011</div>
-                </div><!--//item-->
-            </div><!--//education-container-->
-            
-            <!--
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Languages</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>English <span class="lang-desc">(Native)</span></li>
-                    <li>French <span class="lang-desc">(Professional)</span></li>
-                    <li>Spanish <span class="lang-desc">(Professional)</span></li>
-                </ul>
-            </div><!--//interests-->
+                
+            </div>
+           
             
             
             <div class="interests-container container-block">
@@ -79,49 +65,30 @@
 
                 <ul id='toc-toggle', class="list-unstyled interests-list">
                     
-                    
                     <form action="" method="post">
-                        <input type="hidden" name="description" class="form-control" value="android"/>  
-                        <li> <button class="trans_btn" herf="/admin/products/write"> G-store (Android) </button></li>
+                        <input type="hidden" name="project_name" value="android"/>  
+                        <li> <button class="trans_btn" herf="/admin/products/write"> Mobile </button></li>
                     </form>
 
                     <form action="" method="post">
-                        <input type="hidden" name="description" class="form-control" value="machin-learning"/>  
-                        <li> <button class="trans_btn" herf="/admin/products/write"> machin-learning </button></li>
+                        <input type="hidden" name="project_name" class="form-control" value="machine-learning"/>  
+                        <li> <button class="trans_btn" herf="/admin/products/write"> Machine learning </button></li>
                     </form> 
 
                     <form action="" method="post">
-                        <input type="hidden" name="description" class="form-control" value="android"/>  
-                        <li> <button class="trans_btn" herf="/admin/products/write"> G-store (Android) </button></li>
+                        <input type="hidden" name="project_name" class="form-control" value="arduino"/>  
+                        <li> <button class="trans_btn" herf="/admin/products/write"> Arduino </button></li>
                     </form> 
 
                     <form action="" method="post">
-                        <input type="hidden" name="description" class="form-control" value="android"/>  
-                        <li> <button class="trans_btn" herf="/admin/products/write"> G-store (Android) </button></li>
+                        <input type="hidden" name="project_name" class="form-control" value="network"/>  
+                        <li> <button class="trans_btn" herf="/admin/products/write"> Network </button></li>
                     </form> 
-
-                        
-                        <li> <button class="trans_btn"> Climbing </button></li>
-                        <li> <button class="trans_btn"> Climbing </button></li>
-                        <li> <button class="trans_btn"> Climbing </button></li>
-                    
-                   
-                    
-                </ul>
-            </div><!--//interests-->
-            
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Project</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Climbing</li>
-                    <li>Snowboarding</li>
-                    <li>Cooking</li>
-                </ul>
-            </div><!--//interests-->
+              </ul>
+            </div>
             
             
-            
-        </div><!--//sidebar-wrapper-->
+        </div>
         
         <div class="main-wrapper">
             
@@ -178,67 +145,12 @@
                 
             </section><!--//section-->
             
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
-                <div class="intro">
-                    <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-                </div><!--//intro-->
-                <div class="item">
-                    <span class="project-title"><a href="#hook">Velocity</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote, market and sell their products.</span>
-                    
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span> - 
-                    <span class="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank">Tempo</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote their products or services and to attract users &amp; investors</span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Atom</a></span> - <span class="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
-                </div><!--//item-->
-                <div class="item">
-                    <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank">Delta</a></span> - <span class="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
-                </div><!--//item-->
-            </section><!--//section-->
-            
+  
             <section class="skills-section section">
                 <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
                 <div class="skillset">        
                     <div class="item">
-                        <h3 class="level-title">Python &amp; Django</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="98%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Javascript &amp; jQuery</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="98%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Angular</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="98%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">HTML5 &amp; CSS</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="95%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Ruby on Rails</h3>
+                        <h3 class="level-title">Python </h3>
                         <div class="level-bar">
                             <div class="level-bar-inner" data-level="85%">
                             </div>                                      
@@ -246,26 +158,43 @@
                     </div><!--//item-->
                     
                     <div class="item">
-                        <h3 class="level-title">Sketch &amp; Photoshop</h3>
+                        <h3 class="level-title">Javascript </h3>
                         <div class="level-bar">
                             <div class="level-bar-inner" data-level="60%">
                             </div>                                      
                         </div><!--//level-bar-->                                 
                     </div><!--//item-->
                     
+                    <div class="item">
+                        <h3 class="level-title">Java</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="75%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">HTML &amp; CSS</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="75%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    <div class="item">
+                        <h3 class="level-title">C</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="80%">
+                            </div>                                      
+                        </div><!--//level-bar-->                                 
+                    </div><!--//item-->
+                    
+                    
                 </div>  
             </section><!--//skills-section-->
             
         </div><!--//main-body-->
     </div>
- 
-    <footer class="footer">
-        <div class="text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-               Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
-
-        </div><!--//container-->
-    </footer><!--//footer-->
  
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>

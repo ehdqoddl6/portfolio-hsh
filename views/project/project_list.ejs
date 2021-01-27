@@ -95,13 +95,16 @@
         </div><!--//sidebar-wrapper-->
         
         <div class="main-wrapper">
+
             
             <section class="section projects-section">
                 <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
                 
                 <div class="item">
+                    
+                    
                     <%projects.forEach(function(project){%>
-                    <table class="">
+                    <table class="word">
                         
                         <tr>
                             <td width="100px"> <span class="project-title"><p>Project title</p></span></th>
@@ -137,6 +140,7 @@
                             <td> <span class="project-title"><p>Github</p></span></th>
                             <td> <span class="project-tagline"><a><p><%=project.url%></p></a></span></th>   
                         </tr>
+                  
 
                         
         
@@ -145,7 +149,7 @@
                     <% });%>
 
                     
-                      
+                    
                 </div><!--//item-->
                 
             </section><!--//section-->

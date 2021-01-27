@@ -12,6 +12,11 @@
     vertical-align:middle;
 }
 
+.word{
+
+    word-break:break-all;
+}
+
 #toc-toggle{
     display:block;
 }

@@ -43,7 +43,6 @@ database = mongoose.connection;
 
 
 
-var admin = require('./routes/admin');
 var project = require('./routes/project');
 
 app.get('/', function(req, res){
@@ -56,7 +55,7 @@ app.post('/', function(req, res){
     res.redirect('/project?id='+name);
  });
 
-app.use('/admin', admin);
+
 app.use('/project', project);
 
 app.listen(port, function(){

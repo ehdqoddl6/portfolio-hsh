@@ -15,8 +15,6 @@ router.get('/', function(req, res){
         res.render('project/project_list', {projects : projects})
     });
 
-    //res.render('project/project_list');
-    //res.send(queryName);
 });
 
 router.post('/', function(req,res){

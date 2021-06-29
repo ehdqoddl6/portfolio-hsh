@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 
 var ProjectSchema = new Schema({
 
-    category : String, //제품명
-    name : String, //가격
-    description : String, //설명
+    category : String, 
+    name : String, 
+    description : String,
     language : String,
     start : String,
     end : String,

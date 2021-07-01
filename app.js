@@ -22,7 +22,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-//auto-increment를 위한 패키지
 var autoIncrement = require('mongoose-auto-increment');
 var db = mongoose.connection;
 
@@ -37,7 +36,7 @@ var databaseUrl = 'mongodb+srv://ehdqoddl6:0000@study.cbjjc.mongodb.net/project?
 	 
 // connect the mongo database
 console.log('try database connection');
-mongoose.Promise = global.Promise;  // mongoose의 Promise 객체는 global의 Promise 객체 사용하도록 함
+mongoose.Promise = global.Promise;  
 connect = mongoose.connect(databaseUrl);
 database = mongoose.connection;
 
